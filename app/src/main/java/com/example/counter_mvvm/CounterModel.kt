@@ -16,4 +16,9 @@ class CounterRepository{
     fun decrement() {
         _counter.count--
     }
+
+    fun reset(){
+        _counter.count = 0
+    }
+
 }

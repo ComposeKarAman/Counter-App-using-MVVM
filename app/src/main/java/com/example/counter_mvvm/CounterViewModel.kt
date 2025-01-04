@@ -21,4 +21,8 @@ class CounterViewModel() : ViewModel() {
         _count.intValue = _repository.getCounter().count
     }
 
+    fun onRest() {
+        _repository.reset()
+        _count.intValue = _repository.getCounter().count
+    }
 }
